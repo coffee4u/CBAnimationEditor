@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F78A725133762440046F166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78A724133762440046F166 /* Cocoa.framework */; };
+		5F78A72F133762440046F166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F78A72D133762440046F166 /* InfoPlist.strings */; };
+		5F78A732133762440046F166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F78A731133762440046F166 /* main.m */; };
+		5F78A735133762440046F166 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5F78A733133762440046F166 /* Credits.rtf */; };
+		5F78A738133762440046F166 /* CBAnimationEditorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F78A737133762440046F166 /* CBAnimationEditorAppDelegate.m */; };
+		5F78A73B133762450046F166 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F78A739133762450046F166 /* MainMenu.xib */; };
+		5F78A73E133762450046F166 /* CBAnimationEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F78A73C133762450046F166 /* CBAnimationEditor.xcdatamodeld */; };
+		5F78A745133762450046F166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78A724133762440046F166 /* Cocoa.framework */; };
+		5F78A74D133762450046F166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F78A74B133762450046F166 /* InfoPlist.strings */; };
+		5F78A750133762450046F166 /* CBAnimationEditorTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5F78A74F133762450046F166 /* CBAnimationEditorTests.h */; };
+		5F78A752133762450046F166 /* CBAnimationEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F78A751133762450046F166 /* CBAnimationEditorTests.m */; };
+		5F78A75A133762450046F166 /* CBAnimationEditorImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 5F78A757133762450046F166 /* CBAnimationEditorImporter.mdimporter */; };
+		5F78A75C133762450046F166 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78A75B133762450046F166 /* CoreServices.framework */; };
+		5F78A75E133762450046F166 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78A75D133762450046F166 /* CoreFoundation.framework */; };
+		5F78A760133762450046F166 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78A75F133762450046F166 /* CoreData.framework */; };
+		5F78A762133762450046F166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78A761133762450046F166 /* Foundation.framework */; };
+		5F78A768133762450046F166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F78A766133762450046F166 /* InfoPlist.strings */; };
+		5F78A76B133762450046F166 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F78A76A133762450046F166 /* main.c */; };
+		5F78A76D133762450046F166 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F78A76C133762450046F166 /* GetMetadataForFile.m */; };
+		5F78A770133762450046F166 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F78A76F133762450046F166 /* MySpotlightImporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F78A746133762450046F166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F78A717133762440046F166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F78A71F133762440046F166;
+			remoteInfo = CBAnimationEditor;
+		};
+		5F78A758133762450046F166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F78A717133762440046F166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F78A756133762450046F166;
+			remoteInfo = CBAnimationEditorImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F78A720133762440046F166 /* CBAnimationEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBAnimationEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F78A724133762440046F166 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5F78A727133762440046F166 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5F78A728133762440046F166 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5F78A729133762440046F166 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F78A72C133762440046F166 /* CBAnimationEditor-Info.plist */ = {isa = PBXFileReference; path = "CBAnimationEditor-Info.plist"; sourceTree = "<group>"; };
+		5F78A72E133762440046F166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F78A730133762440046F166 /* CBAnimationEditor-Prefix.pch */ = {isa = PBXFileReference; path = "CBAnimationEditor-Prefix.pch"; sourceTree = "<group>"; };
+		5F78A731133762440046F166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F78A734133762440046F166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5F78A736133762440046F166 /* CBAnimationEditorAppDelegate.h */ = {isa = PBXFileReference; path = CBAnimationEditorAppDelegate.h; sourceTree = "<group>"; };
+		5F78A737133762440046F166 /* CBAnimationEditorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAnimationEditorAppDelegate.m; sourceTree = "<group>"; };
+		5F78A73A133762450046F166 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5F78A73D133762450046F166 /* CBAnimationEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CBAnimationEditor.xcdatamodel; sourceTree = "<group>"; };
+		5F78A744133762450046F166 /* CBAnimationEditorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBAnimationEditorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F78A74A133762450046F166 /* CBAnimationEditorTests-Info.plist */ = {isa = PBXFileReference; path = "CBAnimationEditorTests-Info.plist"; sourceTree = "<group>"; };
+		5F78A74C133762450046F166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F78A74E133762450046F166 /* CBAnimationEditorTests-Prefix.pch */ = {isa = PBXFileReference; path = "CBAnimationEditorTests-Prefix.pch"; sourceTree = "<group>"; };
+		5F78A74F133762450046F166 /* CBAnimationEditorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAnimationEditorTests.h; sourceTree = "<group>"; };
+		5F78A751133762450046F166 /* CBAnimationEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAnimationEditorTests.m; sourceTree = "<group>"; };
+		5F78A757133762450046F166 /* CBAnimationEditorImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBAnimationEditorImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F78A75B133762450046F166 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		5F78A75D133762450046F166 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5F78A75F133762450046F166 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5F78A761133762450046F166 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F78A765133762450046F166 /* CBAnimationEditorImporter-Info.plist */ = {isa = PBXFileReference; path = "CBAnimationEditorImporter-Info.plist"; sourceTree = "<group>"; };
+		5F78A767133762450046F166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F78A769133762450046F166 /* CBAnimationEditorImporter-Prefix.pch */ = {isa = PBXFileReference; path = "CBAnimationEditorImporter-Prefix.pch"; sourceTree = "<group>"; };
+		5F78A76A133762450046F166 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5F78A76C133762450046F166 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		5F78A76E133762450046F166 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		5F78A76F133762450046F166 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		5F78A771133762450046F166 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F78A71D133762440046F166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A725133762440046F166 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F78A740133762450046F166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A745133762450046F166 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F78A754133762450046F166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A75C133762450046F166 /* CoreServices.framework in Frameworks */,
+				5F78A75E133762450046F166 /* CoreFoundation.framework in Frameworks */,
+				5F78A760133762450046F166 /* CoreData.framework in Frameworks */,
+				5F78A762133762450046F166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F78A715133762440046F166 = {
+			isa = PBXGroup;
+			children = (
+				5F78A72A133762440046F166 /* CBAnimationEditor */,
+				5F78A748133762450046F166 /* CBAnimationEditorTests */,
+				5F78A763133762450046F166 /* CBAnimationEditorImporter */,
+				5F78A723133762440046F166 /* Frameworks */,
+				5F78A721133762440046F166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F78A721133762440046F166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A720133762440046F166 /* CBAnimationEditor.app */,
+				5F78A744133762450046F166 /* CBAnimationEditorTests.octest */,
+				5F78A757133762450046F166 /* CBAnimationEditorImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F78A723133762440046F166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A724133762440046F166 /* Cocoa.framework */,
+				5F78A75B133762450046F166 /* CoreServices.framework */,
+				5F78A75D133762450046F166 /* CoreFoundation.framework */,
+				5F78A75F133762450046F166 /* CoreData.framework */,
+				5F78A761133762450046F166 /* Foundation.framework */,
+				5F78A726133762440046F166 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F78A726133762440046F166 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A727133762440046F166 /* AppKit.framework */,
+				5F78A728133762440046F166 /* CoreData.framework */,
+				5F78A729133762440046F166 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5F78A72A133762440046F166 /* CBAnimationEditor */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A736133762440046F166 /* CBAnimationEditorAppDelegate.h */,
+				5F78A737133762440046F166 /* CBAnimationEditorAppDelegate.m */,
+				5F78A739133762450046F166 /* MainMenu.xib */,
+				5F78A73C133762450046F166 /* CBAnimationEditor.xcdatamodeld */,
+				5F78A72B133762440046F166 /* Supporting Files */,
+			);
+			path = CBAnimationEditor;
+			sourceTree = "<group>";
+		};
+		5F78A72B133762440046F166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A72C133762440046F166 /* CBAnimationEditor-Info.plist */,
+				5F78A72D133762440046F166 /* InfoPlist.strings */,
+				5F78A730133762440046F166 /* CBAnimationEditor-Prefix.pch */,
+				5F78A731133762440046F166 /* main.m */,
+				5F78A733133762440046F166 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F78A748133762450046F166 /* CBAnimationEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A74F133762450046F166 /* CBAnimationEditorTests.h */,
+				5F78A751133762450046F166 /* CBAnimationEditorTests.m */,
+				5F78A749133762450046F166 /* Supporting Files */,
+			);
+			path = CBAnimationEditorTests;
+			sourceTree = "<group>";
+		};
+		5F78A749133762450046F166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A74A133762450046F166 /* CBAnimationEditorTests-Info.plist */,
+				5F78A74B133762450046F166 /* InfoPlist.strings */,
+				5F78A74E133762450046F166 /* CBAnimationEditorTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F78A763133762450046F166 /* CBAnimationEditorImporter */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A76C133762450046F166 /* GetMetadataForFile.m */,
+				5F78A76E133762450046F166 /* MySpotlightImporter.h */,
+				5F78A76F133762450046F166 /* MySpotlightImporter.m */,
+				5F78A771133762450046F166 /* Importer Read Me.txt */,
+				5F78A764133762450046F166 /* Supporting Files */,
+			);
+			path = CBAnimationEditorImporter;
+			sourceTree = "<group>";
+		};
+		5F78A764133762450046F166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A765133762450046F166 /* CBAnimationEditorImporter-Info.plist */,
+				5F78A766133762450046F166 /* InfoPlist.strings */,
+				5F78A769133762450046F166 /* CBAnimationEditorImporter-Prefix.pch */,
+				5F78A76A133762450046F166 /* main.c */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F78A71F133762440046F166 /* CBAnimationEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F78A777133762450046F166 /* Build configuration list for PBXNativeTarget "CBAnimationEditor" */;
+			buildPhases = (
+				5F78A71C133762440046F166 /* Sources */,
+				5F78A71D133762440046F166 /* Frameworks */,
+				5F78A71E133762440046F166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F78A759133762450046F166 /* PBXTargetDependency */,
+			);
+			name = CBAnimationEditor;
+			productName = CBAnimationEditor;
+			productReference = 5F78A720133762440046F166 /* CBAnimationEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F78A743133762450046F166 /* CBAnimationEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F78A77A133762450046F166 /* Build configuration list for PBXNativeTarget "CBAnimationEditorTests" */;
+			buildPhases = (
+				5F78A73F133762450046F166 /* Sources */,
+				5F78A740133762450046F166 /* Frameworks */,
+				5F78A741133762450046F166 /* Resources */,
+				5F78A742133762450046F166 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F78A747133762450046F166 /* PBXTargetDependency */,
+			);
+			name = CBAnimationEditorTests;
+			productName = CBAnimationEditorTests;
+			productReference = 5F78A744133762450046F166 /* CBAnimationEditorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5F78A756133762450046F166 /* CBAnimationEditorImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F78A774133762450046F166 /* Build configuration list for PBXNativeTarget "CBAnimationEditorImporter" */;
+			buildPhases = (
+				5F78A753133762450046F166 /* Sources */,
+				5F78A754133762450046F166 /* Frameworks */,
+				5F78A755133762450046F166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBAnimationEditorImporter;
+			productName = CBAnimationEditorImporter;
+			productReference = 5F78A757133762450046F166 /* CBAnimationEditorImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F78A717133762440046F166 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5F78A71A133762440046F166 /* Build configuration list for PBXProject "CBAnimationEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F78A715133762440046F166;
+			productRefGroup = 5F78A721133762440046F166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F78A71F133762440046F166 /* CBAnimationEditor */,
+				5F78A743133762450046F166 /* CBAnimationEditorTests */,
+				5F78A756133762450046F166 /* CBAnimationEditorImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F78A71E133762440046F166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A72F133762440046F166 /* InfoPlist.strings in Resources */,
+				5F78A735133762440046F166 /* Credits.rtf in Resources */,
+				5F78A73B133762450046F166 /* MainMenu.xib in Resources */,
+				5F78A75A133762450046F166 /* CBAnimationEditorImporter.mdimporter in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F78A741133762450046F166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A74D133762450046F166 /* InfoPlist.strings in Resources */,
+				5F78A750133762450046F166 /* CBAnimationEditorTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F78A755133762450046F166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A768133762450046F166 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F78A742133762450046F166 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F78A71C133762440046F166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A732133762440046F166 /* main.m in Sources */,
+				5F78A738133762440046F166 /* CBAnimationEditorAppDelegate.m in Sources */,
+				5F78A73E133762450046F166 /* CBAnimationEditor.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F78A73F133762450046F166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A752133762450046F166 /* CBAnimationEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F78A753133762450046F166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78A76B133762450046F166 /* main.c in Sources */,
+				5F78A76D133762450046F166 /* GetMetadataForFile.m in Sources */,
+				5F78A770133762450046F166 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F78A747133762450046F166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F78A71F133762440046F166 /* CBAnimationEditor */;
+			targetProxy = 5F78A746133762450046F166 /* PBXContainerItemProxy */;
+		};
+		5F78A759133762450046F166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F78A756133762450046F166 /* CBAnimationEditorImporter */;
+			targetProxy = 5F78A758133762450046F166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F78A72D133762440046F166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F78A72E133762440046F166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F78A733133762440046F166 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F78A734133762440046F166 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5F78A739133762450046F166 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F78A73A133762450046F166 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5F78A74B133762450046F166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F78A74C133762450046F166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F78A766133762450046F166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F78A767133762450046F166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F78A772133762450046F166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F78A773133762450046F166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F78A775133762450046F166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBAnimationEditorImporter/CBAnimationEditorImporter-Prefix.pch";
+				INFOPLIST_FILE = "CBAnimationEditorImporter/CBAnimationEditorImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		5F78A776133762450046F166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBAnimationEditorImporter/CBAnimationEditorImporter-Prefix.pch";
+				INFOPLIST_FILE = "CBAnimationEditorImporter/CBAnimationEditorImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		5F78A778133762450046F166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBAnimationEditor/CBAnimationEditor-Prefix.pch";
+				INFOPLIST_FILE = "CBAnimationEditor/CBAnimationEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F78A779133762450046F166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBAnimationEditor/CBAnimationEditor-Prefix.pch";
+				INFOPLIST_FILE = "CBAnimationEditor/CBAnimationEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F78A77B133762450046F166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBAnimationEditor.app/Contents/MacOS/CBAnimationEditor";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBAnimationEditorTests/CBAnimationEditorTests-Prefix.pch";
+				INFOPLIST_FILE = "CBAnimationEditorTests/CBAnimationEditorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5F78A77C133762450046F166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBAnimationEditor.app/Contents/MacOS/CBAnimationEditor";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBAnimationEditorTests/CBAnimationEditorTests-Prefix.pch";
+				INFOPLIST_FILE = "CBAnimationEditorTests/CBAnimationEditorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F78A71A133762440046F166 /* Build configuration list for PBXProject "CBAnimationEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F78A772133762450046F166 /* Debug */,
+				5F78A773133762450046F166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F78A774133762450046F166 /* Build configuration list for PBXNativeTarget "CBAnimationEditorImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F78A775133762450046F166 /* Debug */,
+				5F78A776133762450046F166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F78A777133762450046F166 /* Build configuration list for PBXNativeTarget "CBAnimationEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F78A778133762450046F166 /* Debug */,
+				5F78A779133762450046F166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F78A77A133762450046F166 /* Build configuration list for PBXNativeTarget "CBAnimationEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F78A77B133762450046F166 /* Debug */,
+				5F78A77C133762450046F166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F78A73C133762450046F166 /* CBAnimationEditor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F78A73D133762450046F166 /* CBAnimationEditor.xcdatamodel */,
+			);
+			currentVersion = 5F78A73D133762450046F166 /* CBAnimationEditor.xcdatamodel */;
+			path = CBAnimationEditor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F78A717133762440046F166 /* Project object */;
+}
